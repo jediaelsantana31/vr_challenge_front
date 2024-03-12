@@ -1,0 +1,52 @@
+# Arquivos e diretórios específicos do Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos de dependências do Cypress
+.cypress/
+.cy/            # Diretório de cache do Cypress
+
+# Arquivos de resultados e screenshots do Cypress
+cypress/screenshots/
+cypress/videos/
+
+# Outros arquivos de resultados e cache do Cypress
+cypress/fixtures/
+cypress/results/
+cypress/backups/
+
+# Arquivo de configuração do Cypress
+cypress.env.json
+
+# Outros arquivos específicos do Cypress
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos temporários
+*.log
+*.tmp
+*.tmp.*
+*.swp
+
+# Arquivos gerados automaticamente
+*.seed
+*.pid
+*.log
+*.d.ts.map
+*.env
+*.env.development
+*.env.test
+*.env.production
+
+# Arquivos de produção/distribuição
+dist/
+build/
+*.min.js
+*.min.css
+
+# Outros arquivos e diretórios
+.DS_Store
+Thumbs.db
+.cache/
+.history/
