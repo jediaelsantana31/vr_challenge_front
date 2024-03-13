@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-13T00:17:55.988Z",
+    "end": "2024-03-13T00:18:08.070Z",
+    "duration": 12082,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9284c91d-b720-4165-9485-f38d6d3532ff",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loja_vr.cy.js",
+      "file": "cypress\\e2e\\loja_vr.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "489ef9c1-ad88-453e-98c5-9af06e599ed0",
+          "title": "Teste de Adicionar o produto \"Auto\" ao carrinho na Loja VR",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve adicionar o produto \"Auto\" ao carrinho e validar o carrinho",
+              "fullTitle": "Teste de Adicionar o produto \"Auto\" ao carrinho na Loja VR Deve adicionar o produto \"Auto\" ao carrinho e validar o carrinho",
+              "timedOut": null,
+              "duration": 9027,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Gera um número aleatório entre 1 e 10 para representar a quantidade de produtos\nconst quantidadeAleatoria = Math.floor(Math.random() * 10) + 1;\n// Gera um número aleatório entre 100 e 200 e fixa duas casas decimais para representar o valor do produto\nconst valorAleatorio = (Math.floor(Math.random() * 100) + 100).toFixed(2);\n// Seleciona a opção de cartão VR\nlojaVRPage.selecionarOpCartaoVR();\n// Adiciona o cartão \"Auto\" ao carrinho com as quantidades aleatórias geradas\nlojaVRPage.addCartaoAuto(quantidadeAleatoria, valorAleatorio);\n// Valida se o produto foi adicionado corretamente ao carrinho\nlojaVRPage.validarCarrinho('Auto', quantidadeAleatoria, valorAleatorio);",
+              "err": {},
+              "uuid": "ce6b8a25-a817-4081-bf77-03cdd1014f35",
+              "parentUUID": "489ef9c1-ad88-453e-98c5-9af06e599ed0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce6b8a25-a817-4081-bf77-03cdd1014f35"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9027,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

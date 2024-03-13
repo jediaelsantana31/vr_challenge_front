@@ -13,7 +13,7 @@ cypress/videos/
 
 # Outros arquivos de resultados e cache do Cypress
 cypress/fixtures/
-cypress/results/
+#cypress/results/
 cypress/backups/
 
 # Arquivo de configuração do Cypress

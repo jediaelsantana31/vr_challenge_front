@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-03-13T00:18:10.648Z",
+    "end": "2024-03-13T00:18:33.024Z",
+    "duration": 22376,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "02f2ebe8-63ee-4434-a95f-66ed5d6bf9ad",
+      "title": "",
+      "fullFile": "cypress\\e2e\\portal_vr.cy.js",
+      "file": "cypress\\e2e\\portal_vr.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "39143264-665b-4cf7-9019-a86e9db3b498",
+          "title": "Teste de Navegação na Loja VR",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve navegar até a loja com sucesso e deve visualizar a mensagem A VR tem tudo que sua empresa precisa!",
+              "fullTitle": "Teste de Navegação na Loja VR Deve navegar até a loja com sucesso e deve visualizar a mensagem A VR tem tudo que sua empresa precisa!",
+              "timedOut": null,
+              "duration": 9759,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.abrirLoja();\nlojaPage.validarHomeLoja(MSG_SUCESSO_LOJA);",
+              "err": {},
+              "uuid": "83e6a45b-2bba-49c0-84a3-0eb976ff6033",
+              "parentUUID": "39143264-665b-4cf7-9019-a86e9db3b498",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve falhar ao validar mensagem FALHA - A VR tem tudo que sua empresa precisa! na loja",
+              "fullTitle": "Teste de Navegação na Loja VR Deve falhar ao validar mensagem FALHA - A VR tem tudo que sua empresa precisa! na loja",
+              "timedOut": null,
+              "duration": 9105,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homePage.abrirLoja();\nlojaPage.validarHomeLoja(MSG_FALHA_LOJA);",
+              "err": {
+                "message": "AssertionError: expected 'A VR tem tudo que sua empresa precisa!' to equal 'FALHA - A VR tem tudo que sua empresa precisa!'",
+                "estack": "AssertionError: expected 'A VR tem tudo que sua empresa precisa!' to equal 'FALHA - A VR tem tudo que sua empresa precisa!'\n    at LojaVRPage.validarHomeLoja (webpack://vr_challenge_front/./cypress/support/pages/LojaPage/index.js:13:43)\n    at Context.eval (webpack://vr_challenge_front/./cypress/e2e/portal_vr.cy.js:27:13)",
+                "diff": "- 'A VR tem tudo que sua empresa precisa!'\n+ 'FALHA - A VR tem tudo que sua empresa precisa!'\n"
+              },
+              "uuid": "fce32dbd-6b0b-4365-9e3a-fb203d130845",
+              "parentUUID": "39143264-665b-4cf7-9019-a86e9db3b498",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83e6a45b-2bba-49c0-84a3-0eb976ff6033"
+          ],
+          "failures": [
+            "fce32dbd-6b0b-4365-9e3a-fb203d130845"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 18864,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
