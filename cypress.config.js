@@ -10,5 +10,12 @@ module.exports = defineConfig({
 
       return getChromiumWebBrowsers(config)
     },
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/results',
+      overwrite: false,
+      html: true,
+      json: true
+    }
   },
 });
